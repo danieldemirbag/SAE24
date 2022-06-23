@@ -1,0 +1,14 @@
+{% extends "main.html" %}
+{% block content %}
+
+<div class="content">
+    <h1>Mise à jour </h1>
+        <form method="post" action="/capteur/info/{{id}}">
+            {% csrf_token %}
+            {{form.as_ul}}
+            <center>
+            <input type="submit" value="Envoyer les données"/></center>
+        </form>
+</div>
+<h1 class="back"><a href="/"> Retour </a></h1>
+{% endblock content %}
