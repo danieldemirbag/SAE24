@@ -3,7 +3,6 @@ from .models import sensors1, sensors_data
 from .forms import SensorsForm
 from django.http import HttpResponseRedirect , HttpResponse
 from django.forms.models import model_to_dict
-import csv
 
 
 def index(request):
@@ -42,23 +41,6 @@ def updatetraitement(request, id):
     else:
         return render(request, "capteur/info.html", {"form": sensors, "id": id})
 
-def export_csv(request, id):
+def filtre(request, id):
     data = sensors_data.objects.filter(sensor = id)
-
-    response = HttpResponse(
-        content_type='text/csv',
-        headers={'Content-Disposition': 'attachment; filename="export.csv"'},
-    )
-
-    writer = csv.writer(response)
-    writer.writerow(['timestamp', 'macaddr', 'piece', 'emplacement', 'nom', 'temp'])
-    for i in data:
-        writer.writerow(
-            [i.datetime,
-            i.sensor.macaddr,
-            i.sensor.piece,
-            i.sensor.emplacement,
-            i.sensor.nom,
-            i.temp])
-
-    return response
+    return render(request, 'donnee/info.html', {'data': data})

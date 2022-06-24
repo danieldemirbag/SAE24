@@ -78,9 +78,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'datamining',
-        'USER': 'toto',
+        'USER': 'tata',
         'HOST': 'localhost',
-        'PASSWORD': 'toto',
+        'PASSWORD': 'tata',
     }
 }
 
