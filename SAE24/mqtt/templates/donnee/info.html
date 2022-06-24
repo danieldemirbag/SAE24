@@ -3,13 +3,13 @@
 
 <META HTTP-EQUIV="Refresh" CONTENT="3; info.html">
 
-<nav>
-  <a href="/">Accueil</a>
-</nav>
+<div class="mainpage">
+  <a href="/"> <p class="arow"> < </p> Page Principale</a >
+</div>
 
-<table>
+<table class="forms">
 
-    <tr>
+    <tr class="top">
         <th>Mac</th>
         <th>Nom</th>
         <th>Date</th>
@@ -19,7 +19,7 @@
     </tr>
 
     {% for i in data %}
-    <tr>
+    <tr class="bot">
         <td>{{i.sensor.macaddr}}</td>
         <td>{{i.sensor.nom}}</td>
         <td>{{i.datetime}}</td>

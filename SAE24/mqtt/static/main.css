@@ -1,90 +1,92 @@
-{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+*{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-decoration: none;
 }
 body {
-    margin:0;
-    font-weight:200;
-
+    font-family: 'Lato', sans-serif;
+    background-color: lightgray;
+}
+.grandtitre {
+    text-align: center;
+    background-color: lightgreen;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 3.5em;
+    color: blue;
+}
+.boutons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10%;
 
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-
-
-{padding:0;margin:0}
-body{background:#EEE;font-family: 'Montserrat', sans-serif;}
-
-nav {
-    background-color:lightblue;
-    text-align:center;
-    padding:1%;
+.boutons a {
+    font-size: 3em;
 }
 
-nav a {
-    font-size:24px;
-    text-decoration:none;
-    font-weight:200;
-
-
+.boutons2 {
+    background-color: lightgreen;
+    padding-right: 6%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 6%;
+    border-radius: 30px;
+    border-style: solid;
+}
+.forms{
+    margin-left: 27%;
+}
+.top{
+    background-color: lightgreen;
+}
+.top th {
+    font-size: 3em;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.top td {
+    text-align: center;
+}
+.bot th {
+    font-size: 2em;
+}
+.bot td {
+    text-align: center;
+}
+.formulaire{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    font-size: 2.5em;
+    width: 25%;
+    padding-left: 38%;
+    text-align: center;
+}
+.formulaire a{
 
 }
-
-section {
-    display:inline-block;
-    width:49.5%;
-    height:70vh;
-    background-color:lightblue;
-    border-radius:20px;
+input{
+    font-size: 0.75em;
+    width: 700px;
 }
-section a {
-    text-decoration: none;
-    font-size:50px;
-    margin-top:30%;
-    text-align:center;
-    display:inline-block;
-    width:100%;
-
+.arow{
+    text-align: center;
+    font-size: 3em;
 }
-
-
-table{border-collapse: collapse;margin-top:50px;}
-table > tbody > tr > th, table > tbody > tr > td{padding:20px;border:1px solid #00b3ff;background:white;font-family:tahoma;width:200px;text-align:center;}
-table > tbody > tr > th{background:#009fe3;color:#EEE;font-size:18px;}
-
-h1 {
-    text-align:center;
-    background-color:lightblue;
-    margin: 0 0 4% 0;
-
+.mainpage {
+    align-item: center;
+    display: flex;
+    background-color: lightgreen;
+    margin-right: 92.5%;
+    font-size: 1.3em;
 }
-li {
-    text-align:center;
-    padding: 1% 0 1% 0;
-    list-style-type:none;
-}
-.back {
-    background-color:transparent    ;
-    margin-top:5%;
-
-
-}
-
-table{
-border-collapse: collapse;
-margin-top:50px;
-margin-left: 25%;
-}
-table > tbody > tr > th, table > tbody > tr > td{
-padding:20px;
-border:1px solid black;
-background:white;
-font-family:tahoma;
-width:100px;
-text-align:center;
-}
-table > tbody > tr > th{
-background:lightblue;
-color: black;
-font-size:18px;
+.back{
+    text-align: center;
+    margin-top: 10%;
+    background-color: lightgreen;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }

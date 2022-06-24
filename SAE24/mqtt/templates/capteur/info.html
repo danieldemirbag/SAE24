@@ -2,11 +2,12 @@
 {% block content %}
 
 
-<nav>
-  <a class="header" href="/">Accueil</a>
-</nav>
-<table>
-    <tr>
+<div class="mainpage">
+  <a href="/"> <p class="arow"> < </p> Page Pincipale</a>
+</div>
+
+<table class="forms">
+    <tr class="top">
         <th>MAC</th>
         <th>Pièce</th>
         <th>Emplacement</th>
@@ -15,7 +16,7 @@
     </tr>
     {% for sensor in sensors %}
     <tbody>
-    <tr>
+    <tr class="bot">
         <td>{{sensor.macaddr}} </td>
         <td>{{sensor.piece}}</td>
         <td>{{sensor.emplacement}} </td>
