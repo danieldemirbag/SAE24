@@ -38,7 +38,7 @@ apt-get install default-libmysqlclient-dev
 
 sudo pip3 install virtualenv
 
-WSGIDaemonProcess django-app python-home=/home/administrateur/django-app/django-appenv python-path=/home/administrateur/django-app
+    WSGIDaemonProcess django-app python-home=/home/administrateur/django-app/django-appenv python-path=/home/administrateur/django-app
 
     WSGIProcessGroup django-app
 
