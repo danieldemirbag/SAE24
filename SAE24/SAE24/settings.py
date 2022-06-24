@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'datamining',
         'USER': 'toto',
-        'HOST': '192.168.22.216',
+        'HOST': 'localhost',
         'PASSWORD': 'toto',
     }
 }
