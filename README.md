@@ -24,14 +24,16 @@ apt-get update
 
 apt-get apache2
 
-apt-get install python3-pip apache2 libapache2-mod-wsgi-py3
+service apache2 start
+
+service apache2 status
+
+apt-get install python3 pip apache2 libapache2-mod-wsgi-py3
 
 apt-get install default-mysql-server
 
 apt-get install default-mysql-client
 
 apt-get install default-libmysqlclient-dev
-
-apt-get install default-libmysqlclient-mariadb
 
 sudo pip3 install virtualenv
